@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaGamepad } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
@@ -13,10 +14,23 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
+        {props.modLink && (
+          <Button
+            variant="primary"
+            href={props.modLink}
+            target="_blank"
+            style={props.ghLink ? { marginLeft: "10px" } : {}}
+          >
+            <FaGamepad /> &nbsp;
+            {"NexusMods"}
+          </Button>
+        )}
         {"\n"}
         {"\n"}
 
@@ -30,7 +44,7 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {props.demoText || "Demo"}
           </Button>
         )}
       </Card.Body>
