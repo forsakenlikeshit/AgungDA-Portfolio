@@ -8,45 +8,49 @@ import { FaGamepad } from "react-icons/fa";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
-        {props.modLink && (
-          <Button
-            variant="primary"
-            href={props.modLink}
-            target="_blank"
-            style={props.ghLink ? { marginLeft: "10px" } : {}}
-          >
-            <FaGamepad /> &nbsp;
-            {"NexusMods"}
-          </Button>
-        )}
-        {"\n"}
-        {"\n"}
+      <Card.Img variant="top" src={props.imgPath} alt={props.title} />
+      <Card.Body className="d-flex flex-column justify-content-between">
+        <div>
+          <Card.Title style={{ fontWeight: "700", marginBottom: "12px" }}>
+            {props.title}
+          </Card.Title>
+          <Card.Text style={{ textAlign: "justify", fontSize: "0.95em" }}>
+            {props.description}
+          </Card.Text>
+        </div>
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        <div style={{ marginTop: "auto", paddingTop: "15px" }}>
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp;
+              {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+          )}
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {props.demoText || "Demo"}
-          </Button>
-        )}
+          {props.modLink && (
+            <Button
+              variant="primary"
+              href={props.modLink}
+              target="_blank"
+              style={props.ghLink ? { marginLeft: "10px" } : {}}
+            >
+              <FaGamepad /> &nbsp;
+              {"NexusMods"}
+            </Button>
+          )}
+
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {props.demoText || "Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

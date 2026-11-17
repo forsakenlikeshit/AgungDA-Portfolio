@@ -6,33 +6,39 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: 'justify' }}>
-            Hi everyone! I’m <span className="purple">Agung Dwi Aprizal</span> from{' '}
+          <p style={{ textAlign: 'justify', lineHeight: '1.7' }}>
+            Hello everyone! I’m <span className="purple">Agung Dwi Aprizal</span> based in{' '}
             <span className="purple">Karawang, Indonesia</span>.
             <br />
-            I’m currently working as a <span className="purple">Freelance PC Technician</span>
-            <br />I hold an Bachelor's degree in <span className="purple">
-              English Education
-            </span>{' '}
-            from <span className="purple">Universitas Singaperbangsa Karawang</span>.
+            <br />
+            I am a multi-disciplinary developer with hands-on experience spanning{' '}
+            <span className="purple">Full-Stack Web Development</span> (React.js, Node.js, Express, MySQL),{' '}
+            <span className="purple">Desktop Process Automation</span> (Python, Tkinter, OpenXML, Pillow), and{' '}
+            <span className="purple">Game Systems Modding</span> (Lua, Unreal Engine RE-UE4SS, GVAS binary parsing).
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me creative and inspired:
+            Alongside software development, I have over five years of experience as a{' '}
+            <span className="purple">PC & IT Support Technician</span> specializing in hardware diagnostics,
+            server maintenance, and diskless systems management (CCBoot). I hold a Bachelor's degree from{' '}
+            <span className="purple">Universitas Singaperbangsa Karawang</span>.
+            <br />
+            <br />
+            Outside of programming, here are some activities I am passionate about:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Game Modding & Systems Scripting
             </li>
             <li className="about-activity">
-              <ImPointRight /> Modding Games
+              <ImPointRight /> Hardware Optimization & Custom PC Builds
             </li>
             <li className="about-activity">
-              <ImPointRight /> Analyzing Movies and TV Shows
+              <ImPointRight /> Cinema & Narrative Analysis
             </li>
           </ul>
 
-          <p style={{ color: 'rgb(155 126 172)' }}>
+          <p style={{ color: 'rgb(155 126 172)', marginTop: '20px' }}>
             "Strive to build things that make a difference!"{' '}
           </p>
           <footer className="blockquote-footer">Agung Dwi Aprizal</footer>

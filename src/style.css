@@ -409,8 +409,8 @@ button:focus {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 .footer-copywright {
   text-align: center !important;
@@ -419,6 +419,9 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 @media (max-width: 767px) {
@@ -438,9 +441,12 @@ button:focus {
   margin-bottom: 0.5em !important;
 }
 .footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  margin: 0 !important;
   padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  list-style: none !important;
 }
 
 .blockquote-footer {
@@ -457,10 +463,11 @@ button:focus {
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  display: flex !important;
   height: auto !important;
 }
 
@@ -471,6 +478,9 @@ button:focus {
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
@@ -510,9 +520,12 @@ button:focus {
 }
 
 .card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  object-position: top !important;
+  padding: 12px !important;
+  opacity: 0.95 !important;
+  border-radius: 14px !important;
 }
 
 .blog-img {
@@ -596,6 +609,20 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   outline: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+.tech-icons img {
+  height: 24px !important;
+  width: auto !important;
+  max-width: 28px !important;
+  object-fit: contain !important;
+  align-self: center !important;
+}
+
+.tech-icons svg {
+  width: 24px !important;
+  height: 24px !important;
+  align-self: center !important;
 }
 .tech-icon-images {
   height: 1.6rem;

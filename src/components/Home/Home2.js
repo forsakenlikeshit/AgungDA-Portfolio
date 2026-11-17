@@ -12,20 +12,36 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm an aspiring Frontend and Fullstack Developer with a background in education and
-              digital learning content. My journey into software development began with a curiosity
-              about how web applications are built and a desire to create products that are both
-              useful and accessible to users.
+              I am a versatile developer and technician passionate about building clean
+              web applications, automating workflows, and reverse-engineering game systems.
               <br />
               <br />
-              Through self-learning and intensive bootcamp training, I have developed experience
-              building web applications using
+              My technical work spans:
+              <br />
               <i>
-                <b className="purple"> JavaScript, React, HTML, CSS </b>
+                <b className="purple">
+                  {' '}
+                  • Full-Stack Web Development (JavaScript, React.js, Node.js, Express, MySQL)
+                </b>
               </i>
-              , and modern frontend development practices. I enjoy turning designs and ideas into
-              interactive user experiences while continuously improving my problem-solving and
-              technical skills.
+              <br />
+              <i>
+                <b className="purple">
+                  {' '}
+                  • Desktop Process Automation (Python, Tkinter, Pillow, OpenXML)
+                </b>
+              </i>
+              <br />
+              <i>
+                <b className="purple">
+                  {' '}
+                  • Game Systems Modding (Lua, Unreal Engine RE-UE4SS, Binary File Parsing)
+                </b>
+              </i>
+              <br />
+              <br />
+              Backed by over five years of hands-on experience in PC hardware diagnostics and server/network maintenance,
+              I combine practical troubleshooting with modern software development.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

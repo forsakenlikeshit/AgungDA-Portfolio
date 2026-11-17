@@ -16,11 +16,11 @@ function Projects() {
         </h1>
         <p style={{ color: 'white' }}>Here are a few projects I've worked on recently.</p>
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={6} className="project-card">
             <ProjectCard
               imgPath={docugen}
               isBlog={false}
-              title="DocuGen - Automation Suite"
+              title="DocuGen - Desktop Automation Suite"
               description="Engineered a Python desktop automation suite (Tkinter, python-docx, Pillow, OpenXML) reducing procurement and civil works documentation time by ~80%. Automated image aspect-ratio scaling, table layout constraints, natural sorting, and progress comparison alignment, distributed as standalone .exe binaries."
               ghLink="https://github.com/forsakenlikeshit/docugen-automation-suite"
               demoLink="https://github.com/forsakenlikeshit/docugen-automation-suite/releases/tag/v1.0.0"
@@ -28,7 +28,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={6} className="project-card">
             <ProjectCard
               imgPath={stellarblade}
               isBlog={false}
@@ -38,7 +38,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={6} className="project-card">
             <ProjectCard
               imgPath={videobelajar}
               isBlog={false}
@@ -49,7 +49,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={6} className="project-card">
             <ProjectCard
               imgPath={videobelajarbackend}
               isBlog={false}
